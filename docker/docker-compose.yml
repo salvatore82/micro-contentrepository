@@ -6,3 +6,10 @@ services:
     build: .
     ports:
       - 8091:8080
+    networks:
+        - microusernetwork
+
+networks:
+  microusernetwork:
+    driver: bridge
+    
